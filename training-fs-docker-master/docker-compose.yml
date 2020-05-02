@@ -1,0 +1,9 @@
+version: "2.2"
+services:
+  postgres:
+    build: ./postgres
+    container_name: postgres
+    environment:
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - 5432:5432
